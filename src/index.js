@@ -1,4 +1,5 @@
 import "./css/styles.css";
 import "./css/normalize.css";
+import { loadHomePage } from "./home";
 
-console.log("TESTING");
+loadHomePage();
