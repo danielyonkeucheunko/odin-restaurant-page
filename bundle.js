@@ -176,7 +176,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loadMenuPage: () => (/* binding */ loadMenuPage)\n/* harmony export */ });\nfunction loadMenuPage() {\n    const content = document.getElementById(\"content\");\n    content.innerHTML = \"\";\n\n    const menuPage = document.createElement(\"div\");\n    menuPage.className = \"menu-page\";\n\n    const menuTitle = document.createElement(\"div\");\n    menuTitle.className = \"menu-title\";\n    menuTitle.textContent = \"Menu\";\n\n    const menu = document.createElement(\"div\");\n    menu.className = \"menu\";\n\n    const menuItem = document.createElement(\"div\");\n    menuItem.className = \"menu-item\";\n\n    const burger = document.createElement(\"img\");\n    burger.className = \"food\";\n    burger.src = \"/src/images/burger.jpg\";\n    burger.alt = \"A Picture of a Burger\";\n\n    const itemInfo = document.createElement(\"div\");\n    itemInfo.className = \"item-info\";\n\n    const itemTitle = document.createElement(\"div\");\n    itemTitle.className = \"item-title\";\n    itemTitle.textContent = \"So Real Burger\";\n\n    const itemDesc = document.createElement(\"div\");\n    itemDesc.className = \"item-desc\";\n    itemDesc.textContent = \"A completely real burger that totally exists!\";\n\n    itemInfo.appendChild(itemTitle);\n    itemInfo.appendChild(itemDesc);\n\n    menuItem.appendChild(burger);\n    menuItem.appendChild(itemInfo);\n\n    for (let i = 0; i < 8; i++) {\n        menu.appendChild(menuItem.cloneNode(true));\n    }\n\n    menuPage.appendChild(menuTitle);\n    menuPage.appendChild(menu);\n\n    content.appendChild(menuPage);\n}\n\n\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/scripts/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loadMenuPage: () => (/* binding */ loadMenuPage)\n/* harmony export */ });\n/* harmony import */ var _images_burger_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/burger.jpg */ \"./src/images/burger.jpg\");\n\n\nfunction loadMenuPage() {\n    const content = document.getElementById(\"content\");\n    content.innerHTML = \"\";\n\n    const menuPage = document.createElement(\"div\");\n    menuPage.className = \"menu-page\";\n\n    const menuTitle = document.createElement(\"div\");\n    menuTitle.className = \"menu-title\";\n    menuTitle.textContent = \"Menu\";\n\n    const menu = document.createElement(\"div\");\n    menu.className = \"menu\";\n\n    const menuItem = document.createElement(\"div\");\n    menuItem.className = \"menu-item\";\n\n    const burger = new Image();\n    burger.src = _images_burger_jpg__WEBPACK_IMPORTED_MODULE_0__;\n    burger.alt = \"A Picture of a Burger\";\n    burger.className = \"food\";\n\n    const itemInfo = document.createElement(\"div\");\n    itemInfo.className = \"item-info\";\n\n    const itemTitle = document.createElement(\"div\");\n    itemTitle.className = \"item-title\";\n    itemTitle.textContent = \"So Real Burger\";\n\n    const itemDesc = document.createElement(\"div\");\n    itemDesc.className = \"item-desc\";\n    itemDesc.textContent = \"A completely real burger that totally exists!\";\n\n    itemInfo.appendChild(itemTitle);\n    itemInfo.appendChild(itemDesc);\n\n    menuItem.appendChild(burger);\n    menuItem.appendChild(itemInfo);\n\n    for (let i = 0; i < 8; i++) {\n        menu.appendChild(menuItem.cloneNode(true));\n    }\n\n    menuPage.appendChild(menuTitle);\n    menuPage.appendChild(menu);\n\n    content.appendChild(menuPage);\n}\n\n\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/scripts/menu.js?");
 
 /***/ }),
 
@@ -197,6 +197,16 @@ eval("module.exports = __webpack_require__.p + \"35d26b781dc5fda684cc.ttf\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"096ebc6eb9558d4534e2.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/images/Fast-Food-Restaurants.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/burger.jpg":
+/*!*******************************!*\
+  !*** ./src/images/burger.jpg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"0a6d6505543d1269d050.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/images/burger.jpg?");
 
 /***/ })
 
