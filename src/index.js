@@ -1,8 +1,8 @@
 import "./css/styles.css";
 import "./css/normalize.css";
-import { loadHomePage } from "./home";
-import { loadMenuPage } from "./menu";
-import { loadAboutPage } from "./about";
+import { loadHomePage } from "./scripts/home";
+import { loadMenuPage } from "./scripts/menu";
+import { loadAboutPage } from "./scripts/about";
 
 document.getElementById("home").addEventListener("click", () => {
     loadHomePage();

@@ -1,3 +1,5 @@
+import { loadMenuPage } from "./menu";
+
 function loadHomePage() {
     const content = document.getElementById("content");
     content.innerHTML = "";
@@ -24,6 +26,10 @@ function loadHomePage() {
     const menuButton = document.createElement("button");
     menuButton.className = "menu-button";
     menuButton.textContent = "See Our Menu!";
+
+    menuButton.addEventListener("click", () => {
+        loadMenuPage();
+    });
 
     customerSection.appendChild(menuButton);
 
