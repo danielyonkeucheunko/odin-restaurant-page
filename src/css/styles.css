@@ -1,6 +1,6 @@
 :root {
     --main-color: #ef4444;
-    --secondary-color: #fbbf24;
+    --secondary-color: #fcd34d;
 
     font-family: "Poppins";
 }
@@ -100,14 +100,58 @@ nav {
     font-size: 45px;
     padding: 30px;
     font-weight: 600;
-    color: #fcd34d;
+    color: var(--secondary-color);
     align-items: center;
     justify-content: space-evenly;
 }
 
-.menu {
-    background-color: #fcd34d;
+.menu-button {
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 30px;
     width: 400px;
+}
+
+/* Menu Page */
+.menu-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background-color: #171717;
+}
+
+.menu-title {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1000px;
+    height: 1000px;
+    background-color: #fcd34d;
+    border-radius: 40px;
+    padding: 30px;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.food {
+    height: 150px;
+    border-radius: 30px;
+}
+
+.item-title {
+    font-size: 30px;
+    font-weight: 600;
 }

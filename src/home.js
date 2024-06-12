@@ -22,7 +22,7 @@ function loadHomePage() {
     customerSection.textContent = "Serving customers in 87 countries!";
 
     const menuButton = document.createElement("button");
-    menuButton.className = "menu";
+    menuButton.className = "menu-button";
     menuButton.textContent = "See Our Menu!";
 
     customerSection.appendChild(menuButton);
