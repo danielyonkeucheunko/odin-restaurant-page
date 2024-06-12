@@ -1,3 +1,5 @@
+import burgerImage from "../images/burger.jpg";
+
 function loadMenuPage() {
     const content = document.getElementById("content");
     content.innerHTML = "";
@@ -15,10 +17,10 @@ function loadMenuPage() {
     const menuItem = document.createElement("div");
     menuItem.className = "menu-item";
 
-    const burger = document.createElement("img");
-    burger.className = "food";
-    burger.src = "/src/images/burger.jpg";
+    const burger = new Image();
+    burger.src = burgerImage;
     burger.alt = "A Picture of a Burger";
+    burger.className = "food";
 
     const itemInfo = document.createElement("div");
     itemInfo.className = "item-info";
